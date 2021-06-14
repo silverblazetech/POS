@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.sidebar{
+  position: fixed;
+  top: 80px;
+  left: 0;
+  height: 100%;
+  width: 240px;
+  background: #0000b3;
+  padding: 6px 14px;
+  border-bottom-right-radius: 15px;
+}
+
+.sidebar .logo_content .logo{
+  color: 	#ffffff;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+}
+
+.logo_content .logo i{
+  font-size: 28px;
+  margin-right: 50px;
+}
+
+
+.logo_content .logo .logo_name{
+
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  font-style : oblique;
+}
+
+.sidebar #menu-btn{
+  position: absolute;
+  color: 	#ffffff;
+  left: 90%;
+  top: 6px;
+  font-size: 20px;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  transform: translate(-50%);
+}
+
+.sidebar ul{
+  margin-top: 20px;
+}
+
+.sidebar ul li{
+  list-style: none;
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin: 0 5px;
+  list-style: none;
+  line-height: 50px;
+  border-radius: 12px;
+}
+
+.sidebar ul li input{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  background: #3333ff;
+  padding-left: 50px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.sidebar ul li .bx-search-alt-2{
+  position: relative;
+  color: #ffffff;
+  z-index: 99;
+  font-size: 22px;
+
+}
+
+.sidebar ul li a{
+  color: 	#ffffff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  border-radius: 12px;
+}
+
+.sidebar ul li a:hover{
+  background: #0000ff;
+}
+
+.sidebar ul li i{
+  height: 50px;
+  min-width: 50px;
+  border-radius: 12px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.content{
+  position: relative;
+  height: calc(100%-80px);
+  width: calc(100%-240px);
+  left: 240px;
+  top: 10px;
+}
+
